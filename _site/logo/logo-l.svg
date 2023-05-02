@@ -17,9 +17,9 @@
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="logo-l.svg"
-   inkscape:export-filename="/home/arianna/MEGA/Freelance work/scientific eloquence/logo/logo-l.svg.png"
-   inkscape:export-xdpi="47.881165"
-   inkscape:export-ydpi="47.881165">
+   inkscape:export-filename="/home/arianna/MEGA/Freelance work/scientificeloquence/logo/logo-l.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs2">
     <linearGradient
@@ -538,7 +538,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.25"
-     inkscape:cx="859.37398"
+     inkscape:cx="-532.62602"
      inkscape:cy="220.43911"
      inkscape:document-units="mm"
      inkscape:current-layer="g1429"
@@ -566,7 +566,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
