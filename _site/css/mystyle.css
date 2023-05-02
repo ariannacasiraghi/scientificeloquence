@@ -1,0 +1,516 @@
+/*
+white:        #FFFFFF
+black:        #000000
+teal:         #0EA293
+dark teal:    #097166
+red:          #F93943
+dark red:     #DD0712
+blue:         #223843 for banners
+dark grey:    #5A6872 for navbar text, divider, and footer
+grey:         #CBC8CB for navbar bottom line and hover of a.white
+light grey:   #E8EBED for sections bg colors and some table stripes
+lighter grey: #FEFEFE for the other table stripes
+*/
+
+/*BODY------------------------------------*/
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 70px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem; /*40px*/
+  line-height: 1.6;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.125rem; /*34px*/
+  line-height: 1.6;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 1.75rem; /*28px*/
+  line-height: 1.5;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.25rem; /*20px*/
+}
+
+p, 
+li {
+  font-size: 1.25rem; /*20px*/
+}
+
+b.thick {
+  font-weight: 500;  
+}
+
+a.teal {
+  color: #0EA293;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a.teal:hover {
+  color: #097166;
+}
+
+a.white {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a.white:hover {
+  color: #CBC8CB;
+}
+
+.btn-primary {  /*overwriting some BS styles*/
+  background-color: #F93943;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.25rem; /*20px*/
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #DD0712;
+}
+
+.figure-caption {
+  font-size: 1rem; /*16px*/
+  color: #000000;
+  width:450px;
+}
+
+/*NAVBAR----------------------------------*/
+.navbar-light {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CBC8CB;
+}
+
+.navbar-nav li a{
+  color: #5A6872 !important;
+}
+
+.nav > .nav-item > .active{
+  color: #0EA293 !important;
+}
+
+.navbar-light .nav-item:hover .nav-link,
+.navbar-light .nav-item:active .nav-link {
+  color: #0EA293 !important;
+}
+
+#btn-order {
+  color: #FFFFFF !important;
+  background-color: #F93943;
+  border-radius: 8px;
+}
+
+#btn-order:hover,
+#btn-order:active {
+  background-color: #DD0712;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+  margin-right: -10px;
+}
+
+.fa-bars, 
+.fa-circle {
+  color:  #0EA293;
+}
+
+.divider {
+  color: #5A6872;
+}
+
+.modal-open .fixed-top {
+  padding-right: 32px !important;
+}
+
+/*HOME-------------------------------------*/
+#home-banner .container-fluid {
+  position: relative;
+  text-align: center;
+}
+
+#home-banner .text-on-image {
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /* To prevent text from wrapping */
+}
+
+#what-we-do, 
+#want-to-talk {
+  background-color: #E8EBED;
+}
+
+/*SERVICES-------------------------------------*/
+#services-banner {
+  background-color: #223843;
+  color: #FFFFFF;
+}
+
+#services-table {
+  background-color: #E8EBED;
+}
+
+table {
+  font-size: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FEFEFE;
+}
+
+thead th {
+  background-color: #0EA293 !important;
+  color: #FFFFFF;
+  font-weight:400;
+  text-transform: uppercase;
+}
+
+th {
+  font-weight:400;
+}
+
+#table-footnote p,
+#some-faqs p{
+  font-size: 1rem;  /*16px*/
+}
+
+#some-faqs h4{
+  font-weight: 400;
+}
+
+/*PRICING------------------------------------*/
+#pricing-banner {
+  background-color: #223843;
+  color: #FFFFFF;
+} 
+
+#pricing-table {
+  background-color: #E8EBED;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+form {
+  max-width: 800px;
+  font-size: 1.125rem; /*18px*/
+}
+
+input[type="text"] { 
+  font-size: 1.125rem; /*18px*/
+  font-weight: 300;
+}
+
+option, 
+select,
+.form-control {
+  font-weight: 300 !important;
+}
+
+.form-label {
+  font-weight: 400;
+}
+
+.invalid-feedback-radio {
+  margin-left: -27px;
+}
+
+/*ABOUT------------------------------------*/
+#about-banner {
+  background-color: #223843;
+  color: #FFFFFF;
+}
+
+#daniel {
+  background-color: #E8EBED;
+}
+
+#daniel, #arianna { /*So that the href leaves a bit of space at the top*/
+  scroll-margin-top: 60px;
+}
+
+/*FAQ------------------------------------*/
+#faq-banner {
+  background-color: #223843;
+  color: #FFFFFF;
+}
+
+#accordion-1 {
+  background-color: #E8EBED;
+}
+
+#faq-list button, #faq-list p, #faq-list li {
+  font-size: 1.1rem; /*18px*/
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000000  !important;
+  background-color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:hover, .accordion-button:active, .accordion-button:focus {
+  background-color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:after { /*To change the color of the accordion arrow*/
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+/*CONTACT------------------------------------*/
+#contact-banner {
+  background-color: #223843;
+  color: #FFFFFF;
+}
+
+/*FOOTER-------------------------------------*/
+footer {
+  background-color: #223843;
+  color: #FFFFFF;
+}
+
+footer p, footer li {
+  font-size: 1rem;
+}
+
+
+/*MEDIA QUERY XL 1400px-------------------------------------------------*/
+/*MEDIA QUERY XL 1400px-------------------------------------------------*/
+/*MEDIA QUERY XL 1400px-------------------------------------------------*/
+@media (max-width: 1399px) {
+}
+
+
+/*MEDIA QUERY LG 1200px-------------------------------------------------*/
+/*MEDIA QUERY LG 1200px-------------------------------------------------*/
+/*MEDIA QUERY LG 1200px-------------------------------------------------*/
+@media (max-width: 1199px) {
+/*BODY--------------------------------------*/
+h1 {
+  font-size: 2.1875rem; /*35px*/
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.75rem; /*28px*/
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem; /*24px*/
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.1875rem; /*19px*/
+}
+
+p, 
+li, 
+table,
+.btn-primary {
+  font-size: 1.125rem; /*18px*/
+}
+
+.figure-caption {
+  font-size: 0.9375rem; /*15px*/
+}
+
+/*NAVBAR------------------------------------*/
+.navbar-light {
+  font-size: 1.125rem; /*18px*/
+}
+
+/*SERVICES------------------------------------*/
+#table-footnote p,
+#some-faqs p {
+  font-size: 0.9375rem; /*15px*/  
+}
+
+/*PRICING------------------------------------*/
+form {
+  font-size: 1.063rem; /*17px*/
+}
+
+input[type="text"] { 
+  font-size: 1.063rem; /*17px*/
+}
+
+/*FAQ------------------------------------*/
+#faq-list button, #faq-list p, #faq-list li {
+  font-size: 1.063rem; /*17px*/
+}
+
+/*FOOTER------------------------------------*/
+footer p, 
+footer li {
+  font-size: 0.9375rem; /*15px*/
+}}
+
+
+/*MEDIA QUERY MD 992px-------------------------------------------------*/
+/*MEDIA QUERY MD 992px-------------------------------------------------*/
+/*MEDIA QUERY MD 992px-------------------------------------------------*/
+@media (max-width: 991px) {
+/*NAVBAR------------------------------------*/
+.btn-order {
+  max-width: 137px; /* Limit the btn size when navbar is collapsed */ 
+}
+
+/*HOME-------------------------------------*/
+#home-banner .text-on-image {
+  top: 50%;
+  left: 67%;
+}}
+
+
+/*MEDIA QUERY SM 768px-------------------------------------------------*/
+/*MEDIA QUERY SM 768px-------------------------------------------------*/
+/*MEDIA QUERY SM 768px-------------------------------------------------*/
+@media (max-width: 767px) {
+/*BODY--------------------------------------*/
+body {
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 1.75rem; /*28px*/
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 1.5rem; /*24px*/
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.25rem; /*20px*/
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.125rem; /*18px*/
+}
+
+p,
+li,
+table,
+.btn-primary {
+  font-size: 1rem; /*16px*/
+}
+
+.figure-caption {
+  font-size: 0.875rem; /*14px*/
+}
+
+/*NAVBAR--------------------------------------*/
+.navbar-light {
+  font-size: 1rem; /*16px*/
+}
+
+.btn-order {
+  max-width: 124px; /* Limit the btn size when navbar is collapsed */ 
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+/*SERVICES------------------------------------*/
+#table-footnote p,
+some-faqs p{
+  font-size: 0.875rem; /*14px*/  
+}
+
+/*PRICING------------------------------------*/
+form {
+  font-size: 1rem; /*16px*/
+}
+
+input[type="text"] { 
+  font-size: 1rem; /*16px*/
+}
+
+/*FAQ------------------------------------*/
+#faq-list button, #faq-list p, #faq-list li {
+  font-size: 1rem; /*16px*/
+}
+
+/*FOOTER------------------------------------*/
+footer p, 
+footer li {
+  font-size: 0.875rem;  /*14px*/
+}}
+
+
+/*MEDIA QUERY XS 576px-------------------------------------------------*/
+/*MEDIA QUERY XS 576px-------------------------------------------------*/
+/*MEDIA QUERY XS 576px-------------------------------------------------*/
+@media (max-width: 575px) {
+/*BODY--------------------------------------*/
+h1 {
+  font-size: 1.375rem; /*22px*/
+}
+
+h2 {
+  font-size: 1.25rem; /*20px*/
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.125rem; /*18px*/
+}
+
+/*NAVBAR--------------------------------------*/
+.navbar-brand {
+  margin-left: 5px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  margin-right: -15px;
+}
+
+/*HOME-------------------------------------*/
+#home-banner .text-on-image {
+  top: 70%;
+  left: 50%;
+}
+
+/*ABOUT-------------------------------------*/
+.figure-caption {
+  max-width: 100%;
+  height: auto;
+}}

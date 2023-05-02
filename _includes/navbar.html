@@ -1,0 +1,165 @@
+<!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light py-0 pe-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index">
+      <picture>
+        <source srcset="logo/logo-l.svg" media="(min-width: 1400px)"/>
+        <source srcset="logo/logo-m.svg" media="(min-width: 992px)"/>
+        <source srcset="logo/logo-s.svg"/>
+        <img src="img/logo-fallback.svg" alt="schematic of a crystal cell and company name">
+        </picture>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars fa-xl"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ms-auto">
+        <li><hr class="divider my-0"></li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" aria-current="page" href="/services">Services</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="/pricing">Pricing</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="/faq">FAQ</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item ps-0 ps-lg-2 pb-3 pb-lg-0 mt-2 mt-lg-0">
+          <a id="btn-order" class="nav-link btn-order px-2 px-xl-3" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Modal-->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-center d-block">
+        <div class="d-flex">
+          <h2 class="modal-title text-uppercase w-100" id="orderModalLabel">Order now</h2>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <h4 class="modal-title text-uppercase">Please fill in the form below</h4>
+      </div>
+      <div class="container modal-body">
+        <form accept-charset="UTF-8" action="https://usebasin.com/f/9caec4af5688"
+        enctype="multipart/form-data" method="POST" class="needs-validation row g-4 mx-auto" novalidate>
+      
+          <div class="col-md-2">
+            <label class="form-label">Title</label>
+            <select class="form-select">
+              <option selected disabled value=""></option>
+              <option>Ms.</option>
+              <option>Mr.</option>
+              <option>Dr.</option>
+              <option>Prof.</option>
+            </select>
+          </div>
+          <div class="col-md-5 validate-me">
+            <label for="validationCustom1" class="form-label required">First name</label>
+            <input type="text" name ="first name" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your first name
+            </div>
+          </div>
+          <div class="col-md-5 validate-me">
+            <label for="validationCustom1" class="form-label required">Last name</label>
+            <input type="text" name ="last name" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your last name
+            </div>
+          </div>
+        
+          <div class="col-12 validate-me">
+            <label for="validationCustom1" class="form-label required">Email</label>
+            <input type="text" name="email" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your email address
+            </div>
+          </div>
+
+          <div class="col-md-6 validate-me">
+            <label class="form-label required">Service type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio1" id="validationFormCheck1" required>
+              <label class="form-check-label" for="validationFormCheck1">Basic editing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio1" id="validationFormCheck2" required>
+              <label class="form-check-label" for="validationFormCheck2">Premium editing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio1" id="validationFormCheck3" required>
+              <label class="form-check-label" for="validationFormCheck3">Advanced editing</label>
+              <div class="invalid-feedback invalid-feedback-radio">
+                Please select an option
+              </div>
+            </div> 
+          </div> 
+          <div class="col-md-6 validate-me">
+            <label class="form-label required">Delivery time</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio2" id="validationFormCheck4" required>
+              <label class="form-check-label" for="validationFormCheck4">5&ndash;6 working days</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio2" id="validationFormCheck5" required>
+              <label class="form-check-label" for="validationFormCheck5">3&ndash;4 working days</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio2" id="validationFormCheck6" required>
+              <label class="form-check-label" for="validationFormCheck6">1&ndash;2 working days</label>
+              <div class="invalid-feedback invalid-feedback-radio">
+                Please select an option
+              </div>
+            </div>  
+          </div>  
+
+          <div class="col-md-4 validate-me">
+            <label for="validationCustom1" class="form-label required">Target journal</label>
+            <input type="text" name ="target journal" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter the target journal
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Subject area</label>
+            <input type="text" name ="subject area" class="form-control" value="">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">English style</label>
+            <select class="form-select">
+              <option selected disabled value=""></option>
+              <option>American English</option>
+              <option>British English</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="formControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="formControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="formFileMultiple" class="form-label">Upload your document(s)</label>
+            <input class="form-control" type="file" id="formFileMultiple" name="attachments[]" multiple>
+          </div>
+          
+          <div class="col-12 text-center">
+            <button class="btn btn-primary mb-4" type="submit">Place your order</button>
+            <p>Your order will be confirmed via email.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
