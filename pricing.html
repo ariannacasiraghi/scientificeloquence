@@ -79,17 +79,17 @@ sitemap:
       
       <div class="col-md-2">
         <label class="form-label">Title</label>
-        <select class="form-select">
+        <select name="title" class="form-select">
           <option selected disabled value=""></option>
-          <option>Ms.</option>
-          <option>Mr.</option>
-          <option>Dr.</option>
-          <option>Prof.</option>
+          <option value="ms">Ms.</option>
+          <option value="mr">Mr.</option>
+          <option value="dr">Dr.</option>
+          <option value="prof">Prof.</option>
         </select>
       </div>
       <div class="col-md-5 validate-me">
         <label for="validationCustom1" class="form-label required">First name</label>
-        <input type="text" name ="first name" class="form-control" id="validationCustom1" value="" required>
+        <input type="text" name="first name" class="form-control" id="validationCustom1" value="" required>
         <div class="invalid-feedback">
           Please enter your first name
         </div>
@@ -113,15 +113,15 @@ sitemap:
       <div class="col-md-6 validate-me">
         <label class="form-label required">Service type</label>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="service-type" id="validationFormCheck1" value = "basic"required>
+          <input class="form-check-input" type="radio" name="service-type" id="validationFormCheck1" value="basic" required>
           <label class="form-check-label" for="validationFormCheck1">Basic editing</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="service-type" id="validationFormCheck2" value = "premium"required>
+          <input class="form-check-input" type="radio" name="service-type" id="validationFormCheck2" value="premium" required>
           <label class="form-check-label" for="validationFormCheck2">Premium editing</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="service-type" id="validationFormCheck3" value = "advanced"required>
+          <input class="form-check-input" type="radio" name="service-type" id="validationFormCheck3" value="advanced" required>
           <label class="form-check-label" for="validationFormCheck3">Advanced editing</label>
           <div class="invalid-feedback invalid-feedback-radio">
             Please select an option
@@ -135,7 +135,7 @@ sitemap:
           <label class="form-check-label" for="validationFormCheck4">5&ndash;6 working days</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheck5" value="3-64 days" required>
+          <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheck5" value="3-4 days" required>
           <label class="form-check-label" for="validationFormCheck5">3&ndash;4 working days</label>
         </div>
         <div class="form-check">
