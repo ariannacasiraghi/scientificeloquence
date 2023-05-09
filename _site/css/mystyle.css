@@ -227,6 +227,10 @@ form {
   font-size: 1.125rem; /*18px*/
 }
 
+form p {
+  font-size: 1.125rem; /*18px*/
+}
+
 input[type="text"] { 
   font-size: 1.125rem; /*18px*/
   font-weight: 300;
@@ -364,6 +368,10 @@ form {
   font-size: 1.063rem; /*17px*/
 }
 
+form p {
+  font-size: 1.063rem; /*17px*/
+}
+
 input[type="text"] { 
   font-size: 1.063rem; /*17px*/
 }
@@ -456,6 +464,10 @@ some-faqs p{
 
 /*PRICING------------------------------------*/
 form {
+  font-size: 1rem; /*16px*/
+}
+
+form p {
   font-size: 1rem; /*16px*/
 }
 
