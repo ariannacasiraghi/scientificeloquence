@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Font awesome --> 
+    <script src="https://kit.fontawesome.com/b298aa8d1f.js" crossorigin="anonymous"></script>
+    
+    <!-- Favicon --> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#F93943">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    
+    <!-- Title -->
+    <title>Scientific Eloquence | About </title>
+  </head>
+  
+  <body>
+    <!-- header -->
+    <header>
+      <!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light py-0 pe-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./">
+      <picture>
+        <source srcset="logo/logo-l.png" media="(min-width: 1400px)"/>
+        <source srcset="logo/logo-m.png" media="(min-width: 992px)"/>
+        <source srcset="logo/logo-s.png"/>
+        <img src="img/logo-fallback.png" alt="schematic of a crystal cell and company name">
+        </picture>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars fa-xl"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ms-auto">
+        <li><hr class="divider my-0"></li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="services">Services</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="pricing">Pricing</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="about">About</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="faq">FAQ</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="contact">Contact</a>
+        </li>
+        <li class="nav-item ps-0 ps-lg-2 pb-3 pb-lg-0 mt-2 mt-lg-0">
+          <a id="btn-order" class="nav-link btn-order px-2 px-xl-3" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Modal-->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-center d-block">
+        <div class="d-flex">
+          <h2 class="modal-title text-uppercase w-100" id="orderModalLabel">Order now</h2>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <h4 class="modal-title text-uppercase">Please fill in the form below</h4>
+      </div>
+      <div class="container modal-body">
+        <form accept-charset="UTF-8" action="https://usebasin.com/f/5d90f122f19c"
+        enctype="multipart/form-data" method="POST" class="needs-validation row g-4 mx-auto" novalidate>
+      
+          <div class="col-md-2">
+            <label class="form-label">Title</label>
+            <select name="title" class="form-select">
+              <option selected=""></option>
+              <option value="ms">Ms.</option>
+              <option value="mr">Mr.</option>
+              <option value="dr">Dr.</option>
+              <option value="prof">Prof.</option>
+            </select>
+          </div>
+          <div class="col-md-5 validate-me">
+            <label for="validationCustom1" class="form-label required">First name</label>
+            <input type="text" name="first name" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your first name
+            </div>
+          </div>
+          <div class="col-md-5 validate-me">
+            <label for="validationCustom1" class="form-label required">Last name</label>
+            <input type="text" name ="last name" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your last name
+            </div>
+          </div>
+    
+          <div class="col-12 validate-me">
+            <label for="validationCustom1" class="form-label required">Email</label>
+            <input type="text" name="email" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your email address
+            </div>
+          </div>
+
+          <div class="col-md-6 validate-me">
+            <label class="form-label required">Service type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="service-type" id="validationFormCheckModal1" value="basic" required>
+              <label class="form-check-label" for="validationFormCheckModal1">Basic editing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="service-type" id="validationFormCheckModal2" value="premium" required>
+              <label class="form-check-label" for="validationFormCheckModal2">Premium editing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="service-type" id="validationFormCheckModal3" value="advanced" required>
+              <label class="form-check-label" for="validationFormCheckModal3">Advanced editing</label>
+              <div class="invalid-feedback invalid-feedback-radio">
+                Please select an option
+              </div>
+            </div> 
+          </div> 
+          <div class="col-md-6 validate-me">
+            <label class="form-label required">Delivery time</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheckModal4" value="5-6 days" required>
+              <label class="form-check-label" for="validationFormCheckModal4">5&ndash;6 working days</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheckModal5" value="3-4 days" required>
+              <label class="form-check-label" for="validationFormCheckModal5">3&ndash;4 working days</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheckModal6" value="1-2 days" required>
+              <label class="form-check-label" for="validationFormCheckModal6">1&ndash;2 working days</label>
+              <div class="invalid-feedback invalid-feedback-radio">
+                Please select an option
+              </div>
+            </div>  
+          </div>  
+
+          <div class="col-md-4 validate-me">
+            <label for="validationCustom1" class="form-label required">Target journal</label>
+            <input type="text" name ="target-journal" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter the target journal
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Subject area</label>
+            <input type="text" name ="subject-area" class="form-control" value="">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">English style</label>
+            <select name="english-style" class="form-select">
+              <option selected=""></option>
+              <option value="american">American English</option>
+              <option value="british">British English</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="formControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" name="message" id="formControlTextarea1" rows="5"></textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="formFileMultiple" class="form-label">Upload your document(s)</label>
+            <input class="form-control" type="file" id="formFileMultiple" name="attachments[]" multiple>
+            <p class="pt-2">To upload more than one file, please either upload a zip file or select all files simultaneously.</p>
+          </div>
+      
+          <div class="col-12 text-center">
+            <button class="btn btn-primary mb-4" type="submit">Place your order</button>
+            <p>Your order will be confirmed via email.</p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    </header>
+    
+    <!-- content -->
+    <!--about banner-->
+<section id="about-banner" class="py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class=col-md-4>
+        <h1 class="text-uppercase pb-2 pb-md-4">About</h1>
+      </div>
+      <div class=col-md-8>
+        <p>We are two Ph.D. editors, <a class="teal" href="#daniel">Dr. Rayneau-Kirkhope</a> and <a class="teal" href="#arianna">Dr. Casiraghi</a>, each with 10+ years of research experience in Physics, Materials Science, and Nanotechnology. We have published in many high-impact journals, such as Nature, ACS Nano, PNAS, and Adv. Mater. We know what it takes to write a good article!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--daniel-->
+<section id="daniel" class="py-4">
+  <div class="container">
+    <h2 class="text-center text-uppercase pb-lg-3">Dr. Daniel Rayneau-Kirkhope</h2>
+    <div class="row">
+      <div class="col">
+        <div class="float-lg-end text-center my-2 px-5 px-sm-3 ps-lg-5 pe-lg-0">
+          <picture>
+            <source srcset="img/daniel-l-min.jpg" media="(min-width: 992px)"/>
+            <source srcset="img/daniel-m-min.jpg" media="(min-width: 576px)"/>
+            <source srcset="img/daniel-s-min.jpg"/>
+            <img src="img/daniel-fallback.jpg" class=" img-fluid" alt="Dr. Daniel Rayneau-Kirkhope" width="450px">
+            <figcaption class="figure-caption mx-auto">Daniel during a walk in the Alps (2018).</figcaption>
+          </picture>
+        </div>
+
+        <ul class="list-unstyled">
+          <li><h3 class= "text-uppercase pt-3 pt-lg-0">A little about me</h3> 
+            <p>I was born in Oxford (UK) and spent most of my life in England. I have been a researcher for 10 years working on <b class = "thick">theoretical materials science</b>, <b class = "thick">structural optimization</b>, and <b class = "thick">soft condensed matter</b>.</p></li>
+          <li><h3 class= "text-uppercase pt-2 pt-lg-1">My academic experience</h3>
+            <ul style="list-style-type:circle;">
+              <li><p>Academy of Finland Postdoctoral Fellowship, Aalto University (Finland) and Milan University (Italy) (2015&ndash;2018);</p></li>
+              <li><p>AScI Postdoctoral Fellowship, Aalto University (Finland) (2012&ndash;2015);</p></li>
+              <li><p>Ph.D., University of Nottingham (UK) (2009&ndash;2012).</p></li>
+            </ul>
+            <p>During my academic career, I have published articles in journals such as <b class = "thick">Nature</b>, <b class = "thick">ACS Nano</b>, <b class = "thick">PNAS</b>, and <b class = "thick">Phys. Rev. Lett.</b> (see all my publications <a class="teal" target="_blank" href="https://scholar.google.co.uk/citations?user=2sjf18AAAAAJ&hl=en">here</a>).
+          </li>
+          <li><h3 class= "text-uppercase pt-2 pt-lg-1">My editing experience</h3>
+            <p>I have been a freelance editor since 2018. The topics I specialize in are <b class = "thick">theoretical materials science</b>, <b class = "thick">structural optimization</b>, and <b class = "thick">soft condensed matter</b>, with a focus on engineering materials, bio-inspired materials, metamaterials, computational physics, mechanics, and DNA origami.</p></li>
+        </ul>        
+      </div>
+      
+    </div>  
+  </div>  
+</section> 
+
+<!--arianna-->
+<section id="arianna" class="py-4">
+  <div class="container">
+    <h2 class="text-center text-uppercase pb-lg-3">Dr. Arianna Casiraghi</h2>
+    <div class="row">
+      <div class="col">
+        <div class="float-lg-end text-center my-2 px-5 px-sm-3 ps-lg-5 pe-lg-0">
+          <picture>
+            <source srcset="img/arianna-l-min.jpg" media="(min-width: 992px)"/>
+            <source srcset="img/arianna-m-min.jpg" media="(min-width: 576px)"/>
+            <source srcset="img/arianna-s-min.jpg"/>
+            <img src="img/arianna-fallback.jpg" class=" img-fluid" alt="Dr. Arianna Casiraghi" width="450px">
+            <figcaption class="figure-caption mx-auto">Arianna in the magnetotransport lab at the University of Nottingham during her Ph.D. (2010).</figcaption>
+          </picture>
+        </div>
+        
+        <ul class="list-unstyled">
+          <li><h3 class= "text-uppercase pt-3 pt-lg-0">A little about me</h3> 
+            <p>I was born in Italy but have spent most of my life speaking English. I have been a researcher for 11 years working on <b class = "thick">experimental materials science</b> and <b class = "thick">condensed matter physics</b>.</p></li>
+          <li><h3 class= "text-uppercase pt-2 pt-lg-1">My academic experience</h3>
+            <ul style="list-style-type:circle;">
+              <li><p>Postdoctoral Researcher, ISI foundation and INRiM (Italy) (2012&ndash;2019);</p></li>
+              <li><p>Visiting Researcher, National Physics Lab (UK) (2018);</p></li>
+              <li><p>Postdoctoral Researcher, Aalto University (Finland) (2012&ndash;2016);</p></li>
+              <li><p>Ph.D., University of Nottingham (UK) (2008&ndash;2012).</p></li>
+            </ul>
+            <p>During my academic career, I have published articles in journals such as <b class = "thick">Nature</b>, <b class = "thick">Rev. Mod. Phys.</b>, <b class = "thick">Adv. Mater.</b>, and <b class = "thick">Phys. Rev. Lett.</b> (see all my publications <a class="teal" target="_blank" href="https://scholar.google.fi/citations?user=C5usKYsAAAAJ&hl=en">here</a>).
+          </li>
+          <li><h3 class= "text-uppercase pt-2 pt-lg-1">My editing experience</h3>
+            <p>I have been a freelance editor since 2019. The topics I specialize in are <b class = "thick">experimental materials science</b> and <b class = "thick">condensed matter physics</b>, with a focus on spintronics, magnetism, semiconductors, multilferroics, nanomaterials, thin films, crystal growth, and nanofabrication.</p></li>
+        </ul>       
+      </div>
+      
+    </div>
+  </div>  
+</section> 
+
+<!--Want to talk-->
+<section id="want-to-talk" class="py-4">
+  <div class="container">
+    <h2 class="text-center text-uppercase pb-3">Want to talk?</h2>
+    <div class="row">
+      <div class="col text-center">
+        <p>Whatever your needs, we will find a solution that works for you. We guarantee that you will receive a thoroughly edited document, suitable for publication in journals with the highest impact factor.</p>
+        <br>
+        <p>If you would like to speak to us, send us an <a href="mailto:daniel@scientificeloquence.com" class="teal" target="_blank">email</a> or use <a class="teal" target="_blank" href="contact">our form</a> and we will get back to you as soon as possible. We will be happy to answer any questions you may have.</p>
+        <!--Button-->
+        <a class="btn btn-primary btn-lg mt-3" target="_blank" href="contact">Contact us here</a>
+      </div>
+    </div>  
+  </div>  
+</section>
+    
+    <!-- footer -->
+    <footer>
+      <!--Footer first part-->
+<div class="container text-center pt-4 pt-md-5">
+  <div class="row">
+    <div class="col-md-4">
+      <a href="./"> <img src="logo/logo-footer.png" class="img-fluid" alt="schematic of a crystal cell and company name" width="200px"> </a>
+      <p class="pt-2 pt-md-3 pb-3 pb-md-0">Two Ph.D. editors with real research experience. We help you maximize the impact of your research.</p>
+    </div>
+    <div class="col-md-3 col-lg-2">
+      <h4 class="text-uppercase">Company</h4>
+      <ul class="list-unstyled pt-md-2 pb-3 pb-md-0">
+        <li>
+          <a href="about.html" class="white" target="_blank">About</a>
+        </li>
+        <li>
+          <a href="privacy-policy" class="white" target="_blank">Privacy policy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-block col-lg-2">
+      <h4 class="text-uppercase">Services</h4>
+      <ul class="list-unstyled pt-md-2">
+        <li>
+          <a href="services.html" class="white" target="_blank">Editing services</a>
+        </li>
+        <li>
+          <a href="pricing.html" class="white" target="_blank">Pricing</a>
+        </li>
+        <li>
+          <a href="faq.html" class="white" target="_blank">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-5 col-lg-4">
+      <h4 class="text-uppercase">Contact</h4>
+      <ul class="list-unstyled pt-md-2 ">
+        <li>
+          <i class="fa-solid fa-envelope"></i><a href="mailto:daniel@scientificeloquence.com" class="white" target="_blank"> info@scientificeloquence.com</a>
+        </li>
+        <!--<li>
+          <a href="https://www.linkedin.com/" class="white" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i> Follow us</a>
+        </li>-->
+      </ul>
+    </div>
+  </div>   
+</div>  
+ 
+<hr>
+<!--Footer second part-->
+<div class="text-center">
+  <p> SCIENTIFIC ELOQUENCE &ndash; P.IVA: 02664970031 &ndash; Via Circonvallazione 3, 28016 Orta san Giulio (No), Italy.</p>
+</div>
+
+
+<div class="text-center pt-2 pb-1" style="background-color: rgba(0, 0, 0, 0.3)">
+  <p> © 2023 Scientific Eloquence. All Rights Reserved.</p>
+</div> 
+    </footer> 
+    
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+  </body>
+</html>

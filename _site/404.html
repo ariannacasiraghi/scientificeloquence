@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Font awesome --> 
+    <script src="https://kit.fontawesome.com/b298aa8d1f.js" crossorigin="anonymous"></script>
+    
+    <!-- Favicon --> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#F93943">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    
+    <!-- Title -->
+    <title>Scientific eloquence</title>
+  </head>
+  
+  <body>
+    <!-- header -->
+    <header>
+      <!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light py-0 pe-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./">
+      <picture>
+        <source srcset="logo/logo-l.png" media="(min-width: 1400px)"/>
+        <source srcset="logo/logo-m.png" media="(min-width: 992px)"/>
+        <source srcset="logo/logo-s.png"/>
+        <img src="img/logo-fallback.png" alt="schematic of a crystal cell and company name">
+        </picture>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars fa-xl"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ms-auto">
+        <li><hr class="divider my-0"></li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="services">Services</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="pricing">Pricing</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="about">About</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="faq">FAQ</a>
+        </li>
+        <li class="nav-item px-1 px-xl-2">
+          <a class="nav-link" href="contact">Contact</a>
+        </li>
+        <li class="nav-item ps-0 ps-lg-2 pb-3 pb-lg-0 mt-2 mt-lg-0">
+          <a id="btn-order" class="nav-link btn-order px-2 px-xl-3" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Modal-->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-center d-block">
+        <div class="d-flex">
+          <h2 class="modal-title text-uppercase w-100" id="orderModalLabel">Order now</h2>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <h4 class="modal-title text-uppercase">Please fill in the form below</h4>
+      </div>
+      <div class="container modal-body">
+        <form accept-charset="UTF-8" action="https://usebasin.com/f/5d90f122f19c"
+        enctype="multipart/form-data" method="POST" class="needs-validation row g-4 mx-auto" novalidate>
+      
+          <div class="col-md-2">
+            <label class="form-label">Title</label>
+            <select name="title" class="form-select">
+              <option selected=""></option>
+              <option value="ms">Ms.</option>
+              <option value="mr">Mr.</option>
+              <option value="dr">Dr.</option>
+              <option value="prof">Prof.</option>
+            </select>
+          </div>
+          <div class="col-md-5 validate-me">
+            <label for="validationCustom1" class="form-label required">First name</label>
+            <input type="text" name="first name" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your first name
+            </div>
+          </div>
+          <div class="col-md-5 validate-me">
+            <label for="validationCustom1" class="form-label required">Last name</label>
+            <input type="text" name ="last name" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your last name
+            </div>
+          </div>
+    
+          <div class="col-12 validate-me">
+            <label for="validationCustom1" class="form-label required">Email</label>
+            <input type="text" name="email" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter your email address
+            </div>
+          </div>
+
+          <div class="col-md-6 validate-me">
+            <label class="form-label required">Service type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="service-type" id="validationFormCheckModal1" value="basic" required>
+              <label class="form-check-label" for="validationFormCheckModal1">Basic editing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="service-type" id="validationFormCheckModal2" value="premium" required>
+              <label class="form-check-label" for="validationFormCheckModal2">Premium editing</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="service-type" id="validationFormCheckModal3" value="advanced" required>
+              <label class="form-check-label" for="validationFormCheckModal3">Advanced editing</label>
+              <div class="invalid-feedback invalid-feedback-radio">
+                Please select an option
+              </div>
+            </div> 
+          </div> 
+          <div class="col-md-6 validate-me">
+            <label class="form-label required">Delivery time</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheckModal4" value="5-6 days" required>
+              <label class="form-check-label" for="validationFormCheckModal4">5&ndash;6 working days</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheckModal5" value="3-4 days" required>
+              <label class="form-check-label" for="validationFormCheckModal5">3&ndash;4 working days</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery-time" id="validationFormCheckModal6" value="1-2 days" required>
+              <label class="form-check-label" for="validationFormCheckModal6">1&ndash;2 working days</label>
+              <div class="invalid-feedback invalid-feedback-radio">
+                Please select an option
+              </div>
+            </div>  
+          </div>  
+
+          <div class="col-md-4 validate-me">
+            <label for="validationCustom1" class="form-label required">Target journal</label>
+            <input type="text" name ="target-journal" class="form-control" id="validationCustom1" value="" required>
+            <div class="invalid-feedback">
+              Please enter the target journal
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Subject area</label>
+            <input type="text" name ="subject-area" class="form-control" value="">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">English style</label>
+            <select name="english-style" class="form-select">
+              <option selected=""></option>
+              <option value="american">American English</option>
+              <option value="british">British English</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="formControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" name="message" id="formControlTextarea1" rows="5"></textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="formFileMultiple" class="form-label">Upload your document(s)</label>
+            <input class="form-control" type="file" id="formFileMultiple" name="attachments[]" multiple>
+            <p class="pt-2">To upload more than one file, please either upload a zip file or select all files simultaneously.</p>
+          </div>
+      
+          <div class="col-12 text-center">
+            <button class="btn btn-primary mb-4" type="submit">Place your order</button>
+            <p>Your order will be confirmed via email.</p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    </header>
+    
+    <!-- content -->
+    <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+    
+    <!-- footer -->
+    <footer>
+      <!--Footer first part-->
+<div class="container text-center pt-4 pt-md-5">
+  <div class="row">
+    <div class="col-md-4">
+      <a href="./"> <img src="logo/logo-footer.png" class="img-fluid" alt="schematic of a crystal cell and company name" width="200px"> </a>
+      <p class="pt-2 pt-md-3 pb-3 pb-md-0">Two Ph.D. editors with real research experience. We help you maximize the impact of your research.</p>
+    </div>
+    <div class="col-md-3 col-lg-2">
+      <h4 class="text-uppercase">Company</h4>
+      <ul class="list-unstyled pt-md-2 pb-3 pb-md-0">
+        <li>
+          <a href="about.html" class="white" target="_blank">About</a>
+        </li>
+        <li>
+          <a href="privacy-policy" class="white" target="_blank">Privacy policy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-block col-lg-2">
+      <h4 class="text-uppercase">Services</h4>
+      <ul class="list-unstyled pt-md-2">
+        <li>
+          <a href="services.html" class="white" target="_blank">Editing services</a>
+        </li>
+        <li>
+          <a href="pricing.html" class="white" target="_blank">Pricing</a>
+        </li>
+        <li>
+          <a href="faq.html" class="white" target="_blank">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-5 col-lg-4">
+      <h4 class="text-uppercase">Contact</h4>
+      <ul class="list-unstyled pt-md-2 ">
+        <li>
+          <i class="fa-solid fa-envelope"></i><a href="mailto:daniel@scientificeloquence.com" class="white" target="_blank"> info@scientificeloquence.com</a>
+        </li>
+        <!--<li>
+          <a href="https://www.linkedin.com/" class="white" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i> Follow us</a>
+        </li>-->
+      </ul>
+    </div>
+  </div>   
+</div>  
+ 
+<hr>
+<!--Footer second part-->
+<div class="text-center">
+  <p> SCIENTIFIC ELOQUENCE &ndash; P.IVA: 02664970031 &ndash; Via Circonvallazione 3, 28016 Orta san Giulio (No), Italy.</p>
+</div>
+
+
+<div class="text-center pt-2 pb-1" style="background-color: rgba(0, 0, 0, 0.3)">
+  <p> © 2023 Scientific Eloquence. All Rights Reserved.</p>
+</div> 
+    </footer> 
+    
+    <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+  </body>
+</html>
