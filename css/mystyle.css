@@ -82,7 +82,7 @@ a.white:hover {
 
 .btn-primary:hover,
 .btn-primary:active {
-  background-color: #DD0712;
+  background-color: #DD0712 !important;
 }
 
 .figure-caption {
