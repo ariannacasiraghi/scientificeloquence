@@ -81,6 +81,7 @@ a.white:hover {
 }
 
 .btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:active {
   background-color: #DD0712;
 }

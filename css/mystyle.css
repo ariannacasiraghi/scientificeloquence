@@ -81,8 +81,9 @@ a.white:hover {
 }
 
 .btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:active {
-  background-color: #DD0712 !important;
+  background-color: #DD0712;
 }
 
 .figure-caption {
